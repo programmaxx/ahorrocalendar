@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>AhorroCalendar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>AhorroCalendar</h1>
+    </header>
+    <main>
+        <section id="formulario-gasto">
+            <h2>Crear nuevo gasto</h2>
+            <input type="text" id="nombreGasto" placeholder="Nombre del gasto (ej: Cuota de PC)">
+            <input type="number" id="montoTotal" placeholder="Monto total">
+            <input type="number" id="cuotas" placeholder="Cantidad de cuotas">
+            <input type="number" id="gananciaDiaria" placeholder="¿Cuánto ganás por día?">
+            <button onclick="crearGasto()">Crear gasto</button>
+        </section>
+
+        <section id="calendario-container">
+            <h2>Calendario</h2>
+            <div id="calendario"></div>
+        </section>
+
+        <section id="frasco">
+            <h2>Frasco 💰</h2>
+            <div id="frasco-monto">$0</div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
